@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Contacto</title>
+	<link rel="icon" type="image/png" href="../favicon.png">
+	<style>
+	*{margin:0;}
+	 body{font-family:arial,sans-serif;font-size:16px;}
+	 h2,h3,h4,h5,h6,p{font-family:serif;}
+	 table{border-collapse: collapse;}
+	 th,td{border:2px solid gray;  text-align :center;}
+	 .cabecera {
+	 	height: 180px;
+	    background-color: #00FFFF;}
+
+	</style>
+</head>
+<body>
+	<div class="cabecera"><a href="index.html"><img src="../imagenes/logo.png" alt="logo"></a><h1>Contacto</h1></div>
+	 <h2><ins>Atencion al cliente</ins></h2>
+	 <br>
+	 <h3>Desde aquí puedes resolver tus dudas en el departamento de atención al cliente, realizar consultas o enviar propuestas, pero también hacer llegar a los redactores tu opinión acerca de los contenidos publicados, del diseño o de cualquier otra cuestión</h3>
+	 <p>Si deseas ponerte en contacto con nuestro Centro de Atención al Cliente rellena el siguiente formulario.</p>
+	 <br>
+	 <form action="contacto.php" method="post" autocomplete="on">
+	 	<fieldset>
+	 		<legend>Datos Personales</legend>
+	 		<label for="name">Nombre*</label>
+	 		<input type="text" name="texto" id="name" required>
+	 		<br>
+	 		<br>
+	 		<label for="email">Email*</label>
+	 		<input type="email" id="email" name="Email" required>
+	 		<br>
+	 		<br>
+	 		<label for="number"> Telefono</label>
+	 		<input type="number" id="number" name="numero" max="9">
+	 		<br>
+	 		<br>
+	 		<label for="selecciona">Selecciona el tipo de solicitud*</label>
+	 		<select name="solicitud" id="selecciona" required>
+	 			<option value="">--selecciona una opcion--</option>
+	 			<option value="Redaccion">Redaccion</option>
+	 			<option value="Publicidad">Publicidad</option>
+	 			<option value="Consultas Suscripcion">Consultas Suscripcion</option>
+	 			<option value="Primicias">Primicias</option>
+	 			<option value="Otros">Otros</option>
+	 		</select>
+	 		<br>
+	 		<br>
+	 		<label for="consulta"> Consulta*</label>
+	 		<br>
+	 		<textarea name="consulta" id="consulta" required></textarea>
+	 		<br>
+	 		<br>
+	 		<input type="checkbox" name="check" value="aceptado" checked> Subscribirme al boletín de novedades
+	 		<br>
+	 		 <input type="submit" name="enviar" value="Enviar">
+	 	</fieldset>
+	 </form>
+	 <h2>Donde estamos?</h2>
+	 <p>Apreta en el icono para obtener mas informacion</p>
+	 <a href="Ubicacion.html"> <img src="../imagenes/mapa.png" alt="mapa"></a>
+      <footer>
+    	<p>Autor: Sofia Russo<br>
+    	Última modificación: Lunes,18 de octubre de 2021, 16:49 </p>
+    </footer>
+</body>
+</html>
